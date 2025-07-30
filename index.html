@@ -1,52 +1,114 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ahmed Abdirahmaan - Data Engineer</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <div class="container">
-    <h1>Ahmed Abdirahmaan</h1>
-    <img src="profile.jpg" alt="Profile Picture" class="profile-pic">
-    <p>Ahmed Abdirahmaan's resume/portfolio.</p>
-    <a href="https://github.com/YourGitHubUsername" target="_blank">View My GitHub Profile</a>
+<html lang="so">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Maxamed Cali - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: '#005f73',
+              secondary: '#94d2bd',
+            }
+          }
+        }
+      }
+    </script>
+  </head>
+  <body class="bg-gray-100 text-gray-800 font-sans">
+    <!-- Navbar -->
+    <nav class="bg-primary text-white px-6 py-4 flex items-center justify-between">
+      <div class="text-xl font-bold">Maxamed Cali</div>
+      <div class="md:hidden">
+        <button id="menu-btn" class="focus:outline-none">
+          <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+            <path d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </button>
+      </div>
+      <ul id="menu" class="hidden md:flex space-x-6 text-base">
+        <li><a href="#" class="hover:text-secondary">Bogga Hore</a></li>
+        <li><a href="#skills" class="hover:text-secondary">Xirfadaha</a></li>
+        <li><a href="#projects" class="hover:text-secondary">Mashruucyada</a></li>
+        <li><a href="#contact" class="hover:text-secondary">La Xiriir</a></li>
+      </ul>
+    </nav>
 
-    <h2>Data Engineer</h2>
-    <p><strong>Technical Skills:</strong> Python, SQL, Tableau, PowerBI</p>
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="md:hidden hidden bg-primary text-white px-6 py-4 space-y-2">
+      <a href="#" class="block hover:text-secondary">Bogga Hore</a>
+      <a href="#skills" class="block hover:text-secondary">Xirfadaha</a>
+      <a href="#projects" class="block hover:text-secondary">Mashruucyada</a>
+      <a href="#contact" class="block hover:text-secondary">La Xiriir</a>
+    </div>
 
-    <h3>Work Experience</h3>
-    <p><strong>Data Engineer @Confidential</strong></p>
-    <p>(Aug 2022 - Present)</p>
-    <ul>
-      <li>Analyzed and organized raw data</li>
-      <li>Built data systems and pipelines</li>
-    </ul>
+    <!-- Hero Section -->
+    <section class="text-center py-16 bg-white shadow">
+      <h1 class="text-4xl font-bold text-primary mb-2">Maxamed Cali</h1>
+      <p class="text-lg text-gray-600">Web Developer & UI Designer</p>
+    </section>
 
-    <h3>Certificates</h3>
-    <p><strong>Advanced Data Analysis Nanodegree - Udacity</strong></p>
-    <ul>
-      <li>Data analysis and visualization</li>
-      <li>Tools: Python, SQL, Tableau</li>
-    </ul>
-    <p><strong>Data Visualization in Tableau - Cartona Academy</strong></p>
-    <ul>
-      <li>Real-life experience from experts</li>
-    </ul>
+    <!-- Skills Section -->
+    <section id="skills" class="max-w-5xl mx-auto px-6 py-10">
+      <h2 class="text-2xl font-semibold text-primary mb-4 border-b pb-2">Xirfadaha</h2>
+      <ul class="grid grid-cols-2 md:grid-cols-3 gap-4 text-gray-700">
+        <li>HTML / CSS / Tailwind</li>
+        <li>JavaScript / React</li>
+        <li>Node.js / Express</li>
+        <li>MongoDB / MySQL</li>
+        <li>UI/UX Design</li>
+        <li>Git & GitHub</li>
+      </ul>
+    </section>
 
-    <h3>Projects</h3>
-    <p><strong>SuperStore Dashboard:</strong> Visualized store performance using charts.</p>
-    <p><strong>A/B Test:</strong> Used Python libraries like pandas, matplotlib, statsmodels.</p>
-    <p><strong>Soccer Database EDA:</strong> Used SQL, Python, data wrangling techniques.</p>
+    <!-- Projects Section -->
+    <section id="projects" class="bg-white py-10 px-6">
+      <div class="max-w-5xl mx-auto">
+        <h2 class="text-2xl font-semibold text-primary mb-6 border-b pb-2">Mashruucyada</h2>
+        <div class="grid md:grid-cols-3 gap-6">
+          <div class="bg-gray-100 p-4 rounded-lg shadow hover:shadow-xl transition duration-300">
+            <h3 class="text-xl font-bold text-primary mb-2">Website Ganacsi</h3>
+            <p>Website ganacsi oo responsive ah loogu talagalay shirkad maxalli ah.</p>
+          </div>
+          <div class="bg-gray-100 p-4 rounded-lg shadow hover:shadow-xl transition duration-300">
+            <h3 class="text-xl font-bold text-primary mb-2">Dashboard Admin</h3>
+            <p>React dashboard oo leh user authentication iyo API integration.</p>
+          </div>
+          <div class="bg-gray-100 p-4 rounded-lg shadow hover:shadow-xl transition duration-300">
+            <h3 class="text-xl font-bold text-primary mb-2">Blog Fudud</h3>
+            <p>Blog fudud oo HTML/CSS ah loogu talagalay barasho iyo tababar.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <h3>Education</h3>
-    <p>B.S. Computer Science & AI - Cairo University (2017 - 2021)</p>
-    <p><strong>GPA:</strong> 3.25 / 4.0</p>
+    <!-- Contact Section -->
+    <section id="contact" class="max-w-4xl mx-auto px-6 py-10">
+      <h2 class="text-2xl font-semibold text-primary mb-4 border-b pb-2">La Xiriir</h2>
+      <p>Email: <a href="mailto:maxamed@example.com" class="text-blue-600 hover:underline">maxamed@example.com</a></p>
+      <p>Telefoon: +252 63 1234567</p>
+      <div class="mt-4 space-x-4">
+        <a href="https://linkedin.com/in/maxamed" class="text-primary hover:underline" target="_blank">LinkedIn</a>
+        <a href="https://github.com/maxamed" class="text-primary hover:underline" target="_blank">GitHub</a>
+      </div>
+    </section>
 
-    <footer>
-      <p>Hosted on GitHub Pages — Theme by <a href="https://orderedlist.com">orderedlist</a></p>
+    <!-- Footer -->
+    <footer class="text-center text-sm text-gray-500 py-6">
+      &copy; 2025 Maxamed Cali. Dhamaan xuquuqdu way xafidan tahay.
     </footer>
-  </div>
-</body>
+
+    <!-- Script for mobile menu -->
+    <script>
+      const menuBtn = document.getElementById('menu-btn');
+      const mobileMenu = document.getElementById('mobile-menu');
+
+      menuBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+      });
+    </script>
+  </body>
 </html>
