@@ -1,57 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Khaalid Khaalu | Khabiir Caafimaad iyo Daaweyn</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    animation: {
-                        fadeIn: "fadeIn 1s ease-out",
-                        slideUp: "slideUp 1s ease-out",
-                    },
-                    keyframes: {
-                        fadeIn: {
-                            '0%': { opacity: 0 },
-                            '100%': { opacity: 1 },
-                        },
-                        slideUp: {
-                            '0%': { transform: 'translateY(20px)', opacity: 0 },
-                            '100%': { transform: 'translateY(0)', opacity: 1 },
-                        },
-                    },
-                    boxShadow: {
-                        custom: '0 4px 15px rgba(0, 255, 255, 0.3)',
-                    },
-                    textShadow: {
-                        glow: '0 0 5px #00ffff, 0 0 10px #00ffff',
-                    }
-                }
-            },
-            plugins: [
-                function ({ addUtilities }) {
-                    addUtilities({
-                        '.text-shadow': {
-                            'text-shadow': '0 0 5px #00ffff, 0 0 10px #00ffff',
-                        }
-                    })
-                }
-            ]
-        }
-    </script>
-    <style>
-        .hover-text-shadow:hover {
-            text-shadow: 0 0 8px #00ffff, 0 0 12px #00ffff;
-        }
-    </style>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Khaalid Khaalu </title>
+  <meta name="description" content="Khaalid Khaalu waa khabiir caafimaad oo bixiya adeegyo la xiriira daawaynta, caafimaadka, iyo la-talin caafimaad.">
+
+  <!-- Favicon Icons -->
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="shortcut icon" href="/favicon.ico">
+
+  <!-- Social Preview -->
+  <meta property="og:title" content="Khaalid Khaalu | Khabiir Caafimaad iyo Daaweyn" />
+  <meta property="og:description" content="Daawayn, talo caafimaad, iyo adeegyo la xiriira caafimaadka." />
+  <meta property="og:image" content="/preview-saska.jpg" />
+  <meta property="og:url" content="https://centramart.online/" />
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          animation: {
+            fadeIn: "fadeIn 1s ease-out",
+            slideUp: "slideUp 1s ease-out",
+          },
+          keyframes: {
+            fadeIn: {
+              '0%': { opacity: 0 },
+              '100%': { opacity: 1 },
+            },
+            slideUp: {
+              '0%': { transform: 'translateY(20px)', opacity: 0 },
+              '100%': { transform: 'translateY(0)', opacity: 1 },
+            },
+          },
+          boxShadow: {
+            custom: '0 4px 15px rgba(0, 255, 255, 0.3)',
+          },
+          textShadow: {
+            glow: '0 0 5px #00ffff, 0 0 10px #00ffff',
+          }
+        }
+      },
+      plugins: [
+        function ({ addUtilities }) {
+          addUtilities({
+            '.text-shadow': {
+              'text-shadow': '0 0 5px #00ffff, 0 0 10px #00ffff',
+            }
+          })
+        }
+      ]
+    }
+  </script>
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
         integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <style>
+    .hover-text-shadow:hover {
+      text-shadow: 0 0 8px #00ffff, 0 0 12px #00ffff;
+    }
+  </style>
+
+  <!-- Structured Data for SEO -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Khaalid Khaalu",
+      "url": "https://centramart.online/",
+      "image": "https://centramart.online/logo.png",
+      "jobTitle": "Khabiir Caafimaad",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Khaalid Khaalu Clinic"
+      },
+      "sameAs": [
+        "https://facebook.com/yourprofile",
+        "https://twitter.com/yourprofile",
+        "https://www.instagram.com/yourprofile"
+      ],
+      "description": "Khaalid Khaalu waa khabiir caafimaad oo ku takhasusay daawaynta dabiiciga ah iyo daryeelka caafimaadka bulshada."
+    }
+  </script>
 </head>
+
+
 
 <body class="bg-gray-900 text-white font-sans">
 
